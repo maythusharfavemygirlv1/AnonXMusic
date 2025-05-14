@@ -1,0 +1,23 @@
+services:
+  - type: worker
+    name: maythusharmusicvv4
+    env: python
+    plan: pro
+    region: frankfurt
+    buildCommand: pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+    startCommand: bash start
+    envVars:
+      - key: API_ID
+        value: "28637652"
+      - key: API_HASH
+        value: "dd60070d55621ecf4bd705e751723001"
+      - key: BOT_TOKEN
+        value: "8094528791:AAFU8ESFWfgl5DyIc5l2YmbmZS1twiWpc1w"
+      - key: MONGO_DB_URI
+        value: "mongodb+srv://pyaesone:pyaesone@pyaesone.ii8wsxo.mongodb.net/?retryWrites=true&w=majority"
+      - key: OWNER_ID
+        value: "1318826936"
+      - key: LOGGER_ID
+        value: "-1002326433754"
+      - key: STRING_SESSION
+        value: "BAG0-dQAhzDUkVv_aodogO8hCD1nleV6LtRK0AfMAOGwQOO-oC1semRNOJSFZUt0lyKPY4qgGMAKlBIEdqXk2Gojv33JY27zL7xVR-8qtfYN__Y_k9jORHVGnRIAwGHYyY4vs0D6Ld1eFCVp058TfEaAydgxWxK8T1mcmu5ZvZmUoic1ZhYvxGtLOTu7svXlrza9BF97YGW8q0YMkzpTo7l6PLaNPWCvrkelLjmZ8s3HmwQQ8AC5Jwdq3dR1c4pLbUBH7xQH_cGVXwXZbXVsek_cG0-CaBIFym7die9WmlHTTM9BTMinD4UaCGDZvvTh_do2oG_ATv4vJg64-rLp_rYKrm97mgAAAAHPV8XtAA"
